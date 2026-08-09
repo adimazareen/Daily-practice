@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Search Students</title> 
+</head> 
+<body> 
+    <h2>Search Students by Different Criteria</h2> 
+    <form method="post" action="practical08.php"> 
+        Search Term:  
+        <input type="text" name="search_term" required> 
+        <br><br> 
+
+        Search By:  
+        <select name="criteria"> 
+            <option value="id">ID</option> 
+            <option value="name">Name</option> 
+            <option value="email">Email</option> 
+            <option value="age">Age</option> 
+            <option value="course">Course</option> 
+        </select> 
+        <br><br> 
+
+        <input type="submit" name="search" value="Search"> 
+    </form> 
+</body> 
+</html>
