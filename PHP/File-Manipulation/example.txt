@@ -1,0 +1,3 @@
+Hello, this is a simple file manipulation example in PHP.
+You can write multiple lines into the file.
+This line is appended at the end of the file.
