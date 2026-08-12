@@ -1,0 +1,2 @@
+Hello, this is my first file handling program in PHP.
+PHP makes working with files very easy!
