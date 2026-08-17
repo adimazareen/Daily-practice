@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generated Image</title>
+</head>
+<body>
+    <h1>Generated Image</h1>
+    {% if image_url %}
+        <img src="{{ image_url }}" alt="Generated Image" style="display:block; margin: auto; width: 50%;">
+    {% else %}
+        <p>Image could not be generated.</p>
+    {% endif %}
+</body>
+</html>
