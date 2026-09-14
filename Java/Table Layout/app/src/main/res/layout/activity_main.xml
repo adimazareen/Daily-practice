@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <!-- Table Layout -->
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:stretchColumns="1"
+        android:background="#1E1E1E"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <!-- Table Header -->
+
+        <TableRow
+            android:background="#333333">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+        </TableRow>
+
+        <!-- Row 1 -->
+
+        <TableRow
+            android:background="#2A2A2A">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:padding="12dp"
+                android:textColor="#E0E0E0"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adima"
+                android:padding="12dp"
+                android:textColor="#E0E0E0"
+                android:gravity="center" />
+
+        </TableRow>
+
+        <!-- Row 2 -->
+
+        <TableRow
+            android:background="#1F1F1F">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="29"
+                android:padding="12dp"
+                android:textColor="#E0E0E0"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bushra"
+                android:padding="12dp"
+                android:textColor="#E0E0E0"
+                android:gravity="center" />
+
+        </TableRow>
+
+        <!-- Row 3 -->
+
+        <TableRow
+            android:background="#2A2A2A">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34"
+                android:padding="12dp"
+                android:textColor="#E0E0E0"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sofiya"
+                android:padding="12dp"
+                android:textColor="#E0E0E0"
+                android:gravity="center" />
+
+        </TableRow>
+
+        <!-- Row 4 -->
+
+        <TableRow
+            android:background="#1F1F1F">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="57"
+                android:padding="12dp"
+                android:textColor="#E0E0E0"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Samaira"
+                android:padding="12dp"
+                android:textColor="#E0E0E0"
+                android:gravity="center" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
