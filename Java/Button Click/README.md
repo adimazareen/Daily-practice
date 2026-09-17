@@ -154,7 +154,7 @@ tvMessage.setVisibility(View.VISIBLE);
 │  │            Login           │  │
 │  └────────────────────────────┘  │
 │                                  │
-│       Welcome Sami sir!         │
+│                                  │
 │                                  │
 └──────────────────────────────────┘
 ```
