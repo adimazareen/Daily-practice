@@ -175,9 +175,9 @@ The objective of this practical is to understand and implement commonly used And
 │                                  │
 │   [ Notifications OFF ]          │
 │                                  │
-│   ☑ Accept Terms and Conditions  │
+│  ☑ Accept Terms and Conditions  │
 │                                  │
-│   ☆ ☆ ☆ ☆ ☆                      │
+│   ☆ ☆ ☆ ☆ ☆                   │
 │                                  │
 │   Choose a country               │
 │                                  │
