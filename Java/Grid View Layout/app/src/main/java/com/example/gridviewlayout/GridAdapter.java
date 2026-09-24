@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class GridAdapter extends BaseAdapter {
-
     private Context context;
     private String[] fruitNames;
     private int[] fruitImages;
@@ -19,7 +18,6 @@ public class GridAdapter extends BaseAdapter {
             Context context,
             String[] fruitNames,
             int[] fruitImages) {
-
         this.context = context;
         this.fruitNames = fruitNames;
         this.fruitImages = fruitImages;
