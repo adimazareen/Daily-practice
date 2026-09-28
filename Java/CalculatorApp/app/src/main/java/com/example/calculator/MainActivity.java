@@ -20,45 +20,30 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
-
         editText = findViewById(R.id.editText);
     }
 
     public void onDigitClick(View view) {
-
         Button button = (Button) view;
-
         input += button.getText().toString();
-
         editText.setText(input);
     }
 
     public void onOperatorClick(View view) {
-
         Button button = (Button) view;
-
         if (!input.isEmpty()) {
-
             num1 = Double.parseDouble(input);
-
             operator = button.getText().toString();
-
             input = "";
         }
     }
 
     public void onEqualClick(View view) {
-
         if (!input.isEmpty() && !operator.isEmpty()) {
-
             num2 = Double.parseDouble(input);
-
             double result = 0;
-
             switch (operator) {
-
                 case "+":
                     result = num1 + num2;
                     break;
@@ -88,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
             editText.setText(String.valueOf(result));
-
             input = "";
             operator = "";
         }
@@ -113,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
                     0,
                     input.length() - 1
             );
-
             editText.setText(input);
         }
     }
