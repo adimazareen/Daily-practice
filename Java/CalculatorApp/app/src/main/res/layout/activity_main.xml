@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#121212">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="right"
+        android:background="@android:color/darker_gray"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:focusable="false"
+        android:inputType="none" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text here"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#777777"
+        android:backgroundTint="#777777" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:paddingTop="10dp">
+
+        <Button
+            android:text="7"
+            style="@style/CalcButton"
+            android:onClick="onDigitClick" />
+
+        <Button
+            android:text="8"
+            style="@style/CalcButton"
+            android:onClick="onDigitClick" />
+
+        <Button
+            android:text="9"
+            style="@style/CalcButton"
+            android:onClick="onDigitClick" />
+
+        <Button
+            android:text="÷"
+            style="@style/CalcButton"
+            android:onClick="onOperatorClick" />
+
+        <Button
+            android:text="4"
+            style="@style/CalcButton"
+            android:onClick="onDigitClick" />
+
+        <Button
+            android:text="5"
+            style="@style/CalcButton"
+            android:onClick="onDigitClick" />
+
+        <Button
+            android:text="6"
+            style="@style/CalcButton"
+            android:onClick="onDigitClick" />
+
+        <Button
+            android:text="×"
+            style="@style/CalcButton"
+            android:onClick="onOperatorClick" />
+
+        <Button
+            android:text="1"
+            style="@style/CalcButton"
+            android:onClick="onDigitClick" />
+
+        <Button
+            android:text="2"
+            style="@style/CalcButton"
+            android:onClick="onDigitClick" />
+
+        <Button
+            android:text="3"
+            style="@style/CalcButton"
+            android:onClick="onDigitClick" />
+
+        <Button
+            android:text="-"
+            style="@style/CalcButton"
+            android:onClick="onOperatorClick" />
+
+        <Button
+            android:text="C"
+            style="@style/CalcButton"
+            android:onClick="onClearClick" />
+
+        <Button
+            android:text="0"
+            style="@style/CalcButton"
+            android:onClick="onDigitClick" />
+
+        <Button
+            android:text="="
+            style="@style/CalcButton"
+            android:onClick="onEqualClick" />
+
+        <Button
+            android:text="+"
+            style="@style/CalcButton"
+            android:onClick="onOperatorClick" />
+
+        <Button
+            android:text="%"
+            style="@style/CalcButton"
+            android:onClick="onOperatorClick" />
+
+        <Button
+            android:text="⌫"
+            style="@style/CalcButton"
+            android:onClick="onBackspaceClick" />
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adima Zareen's Calculator"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="end"
+        android:paddingTop="20dp"
+        android:textSize="16sp" />
+
+</LinearLayout>
