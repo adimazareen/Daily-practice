@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style
+        name="Theme.Calculator"
+        parent="Theme.Material3.Dark.NoActionBar">
+
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <item name="android:colorBackground">#121212</item>
+        <item name="android:windowBackground">#121212</item>
+
+        <item name="android:statusBarColor">#000000</item>
+
+        <item name="android:navigationBarColor">#000000</item>
+
+    </style>
+
+</resources>
