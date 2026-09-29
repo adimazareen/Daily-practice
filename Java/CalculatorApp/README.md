@@ -1,4 +1,3 @@
-````markdown
 # Android Basic Calculator App
 
 A simple Android application demonstrating how to create a basic calculator using `Button`, `EditText`, `GridLayout`, and Java click event handling.
@@ -67,8 +66,7 @@ CalculatorApp/
                 │
                 └── mipmap-*/
                     └── app icons
-
-````
+```
 
 ## 🎯 Concepts Covered
 
@@ -81,7 +79,6 @@ CalculatorApp/
     android:id="@+id/editText"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
-
 ```
 
 ### 2. GridLayout
@@ -93,7 +90,6 @@ CalculatorApp/
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:columnCount="4">
-
 ```
 
 ### 3. Button Click Events
@@ -104,7 +100,6 @@ Each button calls a specific Java method using the `android:onClick` attribute.
 <Button
     android:text="7"
     android:onClick="onDigitClick" />
-
 ```
 
 ### 4. Digit Input
@@ -120,7 +115,6 @@ public void onDigitClick(View view) {
 
     editText.setText(input);
 }
-
 ```
 
 ### 5. Arithmetic Operators
@@ -164,7 +158,6 @@ switch (operator) {
         result = num1 % num2;
         break;
 }
-
 ```
 
 ### 7. Clear Button
@@ -179,7 +172,6 @@ public void onClearClick(View view) {
 
     editText.setText("");
 }
-
 ```
 
 ### 8. Backspace Button
@@ -199,7 +191,6 @@ public void onBackspaceClick(View view) {
         editText.setText(input);
     }
 }
-
 ```
 
 ## 🖼️ Expected Output
@@ -248,7 +239,4 @@ The objective of this practical is to understand how to create a basic calculato
 
 ## 👩‍💻 Author
 
-Adima
-
-```
-```
+**Adima Zareen**
