@@ -297,4 +297,4 @@ After completing this practical, the student will understand:
 
 ## 👩‍💻 Author
 
-**Adima**
+**Adima Zareen**
