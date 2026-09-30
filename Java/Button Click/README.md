@@ -175,4 +175,4 @@ The objective of this practical is to understand how to handle button click even
 
 ## 👩‍💻 Author
 
-Adima
+**Adima Zareen**
