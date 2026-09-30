@@ -211,4 +211,4 @@ The objective of this practical is to understand how `GridView` works and how a 
 
 ## 👩‍💻 Author
 
-Adima
+**Adima Zareen**
