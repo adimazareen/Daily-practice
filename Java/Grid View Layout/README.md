@@ -1,6 +1,6 @@
 # GridView Layout Android App
 
-A simple Android application demonstrating how to create a `GridView` layout and display multiple items in a two-column grid using a custom `BaseAdapter`.
+A simple Android application demonstrating how to create a **`GridView`** layout and display multiple items in a two-column grid using a custom **`BaseAdapter`**.
 
 ## 📱 Description
 
@@ -15,7 +15,7 @@ The application displays the following fruits:
 * Mango
 * Orange
 
-A custom XML layout is used for each GridView item, and `GridAdapter.java` is used to connect the fruit data with the GridView.
+A custom XML layout is used for each GridView item, and **`GridAdapter.java`** is used to connect the fruit data with the GridView.
 
 ## 🛠️ Technologies Used
 
@@ -75,7 +75,7 @@ GridViewLayoutDemo/
 
 ### 1. GridView
 
-`GridView` is used to display items in a two-dimensional grid.
+**`GridView`** is used to display items in a two-dimensional grid.
 
 ```xml
 <GridView
@@ -85,11 +85,11 @@ GridViewLayoutDemo/
     android:numColumns="2" />
 ```
 
-The `numColumns="2"` attribute arranges the fruits into two columns.
+The **`numColumns="2"`** attribute arranges the fruits into two columns.
 
 ### 2. BaseAdapter
 
-A custom `BaseAdapter` is used to connect the fruit names and images with the GridView.
+A custom **`BaseAdapter`** is used to connect the fruit names and images with the GridView.
 
 ```java
 GridAdapter adapter =
@@ -102,7 +102,7 @@ GridAdapter adapter =
 
 ### 3. Custom Grid Item
 
-A separate XML file called `grid_item.xml` is used to define the appearance of each GridView item.
+A separate XML file called **`grid_item.xml`** is used to define the appearance of each GridView item.
 
 ```text
 res/layout/grid_item.xml
@@ -136,7 +136,7 @@ String[] fruitNames = {
 };
 ```
 
-The corresponding images are stored in the `drawable` folder:
+The corresponding images are stored in the **`drawable`** folder:
 
 ```java
 int[] fruitImages = {
@@ -151,7 +151,7 @@ int[] fruitImages = {
 
 ### 6. Custom GridAdapter
 
-The `GridAdapter.java` class extends `BaseAdapter` and provides the appropriate image and name for each GridView position.
+The **`GridAdapter.java`** class extends **`BaseAdapter`** and provides the appropriate image and name for each GridView position.
 
 ```java
 public class GridAdapter extends BaseAdapter {
@@ -200,14 +200,14 @@ The actual application displays fruit images instead of the emoji representation
 
 1. Open the project in Android Studio.
 2. Allow Gradle to sync.
-3. Make sure all six fruit images are placed inside the `drawable` folder.
+3. Make sure all six fruit images are placed inside the **`drawable`** folder.
 4. Start an Android emulator or connect an Android device.
 5. Click **Run**.
 6. The **Fruits Grid** will be displayed with two columns.
 
 ## 📚 Learning Objective
 
-The objective of this practical is to understand how `GridView` works and how a custom `BaseAdapter` can be used to display images and text in a grid-based Android layout.
+The objective of this practical is to understand how **`GridView`** works and how a custom **`BaseAdapter`** can be used to display images and text in a grid-based Android layout.
 
 ## 👩‍💻 Author
 
