@@ -286,14 +286,14 @@ Welcome, Adima!
 
 After completing this practical, the student will understand:
 
-- The purpose of `RelativeLayout`.
+- The purpose of **`RelativeLayout`**.
 - How to position views relative to other views.
-- How to use `layout_below`.
-- How to use `layout_centerHorizontal`.
-- How to create input fields using `EditText`.
-- How to handle button clicks using `OnClickListener`.
+- How to use **`layout_below`**.
+- How to use **`layout_centerHorizontal`**.
+- How to create input fields using **`EditText`**.
+- How to handle button clicks using **`OnClickListener`**.
 - How to perform basic input validation.
-- How to display messages using `Toast`.
+- How to display messages using **`Toast`**.
 
 ## 👩‍💻 Author
 
