@@ -188,4 +188,4 @@ The objective of this practical is to understand and implement commonly used And
 
 ## 👩‍💻 Author
 
-Adima
+**Adima Zareen**
