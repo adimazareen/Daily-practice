@@ -144,4 +144,4 @@ The objective of this practical is to understand how `TableLayout` and `TableRow
 
 ## 👩‍💻 Author
 
-Adima
+**Adima Zareen**
