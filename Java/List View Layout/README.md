@@ -1,10 +1,10 @@
 # ListView Layout Android App
 
-A simple Android application demonstrating the use of `ListView` and `ArrayAdapter` to display a list of items.
+A simple Android application demonstrating the use of **`ListView`** and **`ArrayAdapter`** to display a list of items.
 
 ## 📱 Description
 
-This project demonstrates how to create and populate a `ListView` in Android.
+This project demonstrates how to create and populate a **`ListView`** in Android.
 
 The application displays a list of names:
 
@@ -68,7 +68,7 @@ ListViewLayoutDemo/
 
 ### 1. ListView
 
-`ListView` is used to display a vertically scrolling list of items.
+**`ListView`** is used to display a vertically scrolling list of items.
 
 ```xml
 <ListView
@@ -77,7 +77,7 @@ ListViewLayoutDemo/
 
 ### 2. ArrayAdapter
 
-`ArrayAdapter` connects the array of data with the ListView.
+**`ArrayAdapter`** connects the array of data with the ListView.
 
 ```java
 ArrayAdapter<String> adapter =
@@ -90,7 +90,7 @@ ArrayAdapter<String> adapter =
 
 ### 3. Custom List Item
 
-A separate XML file called `list_item.xml` is used to define the appearance of each item.
+A separate XML file called **`list_item.xml`** is used to define the appearance of each item.
 
 ```text
 res/layout/list_item.xml
@@ -159,7 +159,7 @@ String[] sampleItems = {
 
 ## 📚 Learning Objective
 
-The objective of this practical is to understand how `ListView` works and how an `ArrayAdapter` can be used to display an array of data in a scrolling list.
+The objective of this practical is to understand how **`ListView`** works and how an **`ArrayAdapter`** can be used to display an array of data in a scrolling list.
 
 ## 👩‍💻 Author
 
