@@ -73,7 +73,7 @@ A Button is used to trigger an action when the user clicks it.
 
 ### 2. OnClickListener
 
-Java's `OnClickListener` is used to detect the button click:
+Java's **`OnClickListener`** is used to detect the button click:
 
 ```java
 btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -87,7 +87,7 @@ btnLogin.setOnClickListener(new View.OnClickListener() {
 
 ### 3. EditText
 
-`EditText` allows the user to enter information.
+**`EditText`** allows the user to enter information.
 
 The email field uses:
 
@@ -171,7 +171,7 @@ tvMessage.setVisibility(View.VISIBLE);
 
 ## 📚 Learning Objective
 
-The objective of this practical is to understand how to handle button click events in Android using `OnClickListener`, perform basic input validation, and update a `TextView` dynamically.
+The objective of this practical is to understand how to handle button click events in Android using **`OnClickListener`**, perform basic input validation, and update a **`TextView`** dynamically.
 
 ## 👩‍💻 Author
 
