@@ -1,6 +1,6 @@
 # Android Basic Calculator App
 
-A simple Android application demonstrating how to create a basic calculator using `Button`, `EditText`, `GridLayout`, and Java click event handling.
+A simple Android application demonstrating how to create a basic calculator using **`Button`**, **`EditText`**, **`GridLayout`**, and Java click event handling.
 
 ## 📱 Description
 
@@ -18,9 +18,9 @@ The calculator provides buttons for:
 - Backspace (⌫)
 - Equal (=)
 
-The calculator uses a `GridLayout` with four columns to arrange the buttons.
+The calculator uses a **`GridLayout`** with four columns to arrange the buttons.
 
-The application takes two numbers and performs the selected arithmetic operation when the `=` button is pressed.
+The application takes two numbers and performs the selected arithmetic operation when the **`=`** button is pressed.
 
 ## 🛠️ Technologies Used
 
@@ -72,7 +72,7 @@ CalculatorApp/
 
 ### 1. EditText
 
-`EditText` is used to display the entered numbers and the calculation result.
+**`EditText`** is used to display the entered numbers and the calculation result.
 
 ```xml
 <EditText
@@ -83,7 +83,7 @@ CalculatorApp/
 
 ### 2. GridLayout
 
-`GridLayout` is used to arrange the calculator buttons in four columns.
+**`GridLayout`** is used to arrange the calculator buttons in four columns.
 
 ```xml
 <GridLayout
@@ -94,7 +94,7 @@ CalculatorApp/
 
 ### 3. Button Click Events
 
-Each button calls a specific Java method using the `android:onClick` attribute.
+Each button calls a specific Java method using the **`android:onClick`** attribute.
 
 ```xml
 <Button
@@ -104,7 +104,7 @@ Each button calls a specific Java method using the `android:onClick` attribute.
 
 ### 4. Digit Input
 
-The `onDigitClick()` method adds the selected number to the current input.
+The **`onDigitClick()`** method adds the selected number to the current input.
 
 ```java
 public void onDigitClick(View view) {
@@ -133,7 +133,7 @@ The selected operator is stored until the user enters the second number and pres
 
 ### 6. Equal Button
 
-The `onEqualClick()` method performs the selected arithmetic operation.
+The **`onEqualClick()`** method performs the selected arithmetic operation.
 
 ```java
 switch (operator) {
@@ -162,7 +162,7 @@ switch (operator) {
 
 ### 7. Clear Button
 
-The `C` button clears the entered input and selected operator.
+The **`C`** button clears the entered input and selected operator.
 
 ```java
 public void onClearClick(View view) {
@@ -176,7 +176,7 @@ public void onClearClick(View view) {
 
 ### 8. Backspace Button
 
-The `⌫` button removes the last entered digit.
+The **`⌫`** button removes the last entered digit.
 
 ```java
 public void onBackspaceClick(View view) {
@@ -229,9 +229,9 @@ public void onBackspaceClick(View view) {
 5. Enter the first number using the calculator buttons.
 6. Select an arithmetic operator.
 7. Enter the second number.
-8. Press `=` to display the result.
-9. Use `C` to clear the calculator.
-10. Use `⌫` to remove the last entered digit.
+8. Press **`=`** to display the result.
+9. Use **`C`** to clear the calculator.
+10. Use **`⌫`** to remove the last entered digit.
 
 ## 📚 Learning Objective
 
