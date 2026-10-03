@@ -1,10 +1,10 @@
 # Linear Layout Demo
 
-A basic Android application demonstrating the use of `LinearLayout` in Android.
+A basic Android application demonstrating the use of **`LinearLayout`** in Android.
 
 ## 📱 Description
 
-This project demonstrates how to create a simple email/message-style interface using a vertical `LinearLayout`.
+This project demonstrates how to create a simple email/message-style interface using a vertical **`LinearLayout`**.
 
 The application contains:
 
