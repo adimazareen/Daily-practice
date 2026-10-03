@@ -4,7 +4,7 @@ A simple Android application demonstrating how to create a login interface using
 
 ## 📱 Description
 
-This practical demonstrates how to design an Android user interface using `RelativeLayout` and position different UI components relative to each other.
+This practical demonstrates how to design an Android user interface using **`RelativeLayout`** and position different UI components relative to each other.
 
 The application contains a simple login screen with:
 
@@ -22,12 +22,12 @@ When the user clicks the **LOGIN** button, the application checks whether both t
 
 The objective of this practical is to understand how to:
 
-- Create an Android UI using `RelativeLayout`
+- Create an Android UI using **`RelativeLayout`**
 - Position views relative to other views
-- Use `TextView`, `EditText`, and `Button`
+- Use **`TextView`**, **`EditText`**, and **`Button`**
 - Handle button click events
 - Perform basic input validation
-- Display messages using `Toast`
+- Display messages using **`Toast`**
 
 ## 🛠️ Technologies Used
 
@@ -87,7 +87,7 @@ The login screen contains the following components:
 
 ## 📐 RelativeLayout
 
-`RelativeLayout` is a `ViewGroup` that allows UI components to be positioned relative to the parent layout or relative to other views.
+**`RelativeLayout`** is a **`ViewGroup`** that allows UI components to be positioned relative to the parent layout or relative to other views.
 
 The main layout is:
 
@@ -142,7 +142,7 @@ android:layout_marginTop="20dp"
 
 ## 📝 Username Input
 
-The username is entered using an `EditText`:
+The username is entered using an **`EditText`**:
 
 ```xml
 <EditText
@@ -156,9 +156,9 @@ The username is entered using an `EditText`:
 
 ## 🔒 Password Input
 
-The password is entered using an `EditText`.
+The password is entered using an **`EditText`**.
 
-The `textPassword` input type hides the entered password:
+The **`textPassword`** input type hides the entered password:
 
 ```xml
 <EditText
@@ -190,7 +190,7 @@ The Login button is positioned below the password field and centered horizontall
 
 ## 💻 MainActivity.java
 
-The UI components are connected to the Java activity using `findViewById()`:
+The UI components are connected to the Java activity using **`findViewById()`**:
 
 ```java
 usernameInput = findViewById(R.id.usernameInput);
@@ -198,7 +198,7 @@ passwordInput = findViewById(R.id.passwordInput);
 loginButton = findViewById(R.id.loginButton);
 ```
 
-The Login button uses an `OnClickListener`:
+The Login button uses an **`OnClickListener`**:
 
 ```java
 loginButton.setOnClickListener(v -> {
