@@ -1,10 +1,10 @@
 # TableLayout Android App
 
-A simple Android application demonstrating the use of `TableLayout` and `TableRow` to display data in a tabular format.
+A simple Android application demonstrating the use of **`TableLayout`** and **`TableRow`** to display data in a tabular format.
 
 ## 📱 Description
 
-This project demonstrates how to create a table-based user interface using Android's `TableLayout`.
+This project demonstrates how to create a table-based user interface using Android's **`TableLayout`**.
 
 The application displays a list of students with their:
 
@@ -59,7 +59,7 @@ TableLayoutDemo/
 
 ### TableLayout
 
-`TableLayout` is used to arrange UI elements in rows and columns.
+**`TableLayout`** is used to arrange UI elements in rows and columns.
 
 ```xml
 <TableLayout>
@@ -73,7 +73,7 @@ Each row of the table is created using:
 <TableRow>
 ```
 
-Each `TableRow` contains multiple `TextView` elements representing individual cells.
+Each **`TableRow`** contains multiple **`TextView`** elements representing individual cells.
 
 ### Stretch Columns
 
@@ -90,7 +90,7 @@ The index starts from `0`, so:
 
 ### Table Header
 
-The first `TableRow` is used as the table header:
+The first **`TableRow`** is used as the table header:
 
 ```text
 ID | Name
@@ -111,7 +111,7 @@ The application displays four data rows:
 
 ### RelativeLayout
 
-The `TableLayout` is placed inside a `RelativeLayout` and centered using:
+The **`TableLayout`** is placed inside a **`RelativeLayout`** and centered using:
 
 ```xml
 android:layout_centerInParent="true"
@@ -140,7 +140,7 @@ android:layout_centerInParent="true"
 
 ## 📚 Learning Objective
 
-The objective of this practical is to understand how `TableLayout` and `TableRow` can be used to arrange information in rows and columns in an Android application.
+The objective of this practical is to understand how **`TableLayout`** and **`TableRow`** can be used to arrange information in rows and columns in an Android application.
 
 ## 👩‍💻 Author
 
