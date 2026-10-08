@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style
+        name="Theme.HelloWorld"
+        parent="Theme.Material3.Light.NoActionBar">
+
+        <item name="colorPrimary">#FF0000</item>
+
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <item name="android:windowBackground">
+            #FF0000
+        </item>
+
+        <item name="android:statusBarColor">
+            #FF0000
+        </item>
+
+        <item name="android:navigationBarColor">
+            #FF0000
+        </item>
+
+    </style>
+
+</resources>
