@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style
+        name="Theme.EmailValidate"
+        parent="Theme.Material3.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/purple_700</item>
+
+        <item name="android:windowBackground">#FFF7FF</item>
+        <item name="android:statusBarColor">#FFF7FF</item>
+        <item name="android:navigationBarColor">#FFF7FF</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+</resources>
