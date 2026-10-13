@@ -17,10 +17,10 @@ The application provides:
 
 **Demo Credentials:**
 
-- Email: `admin@gmail.com`
-- Password: `1234`
+- Email: **`admin@gmail.com`**
+- Password: **`1234`**
 
-The application uses `ConstraintLayout` to arrange the UI components and Android's `Patterns.EMAIL_ADDRESS` to validate the email format.
+The application uses **`ConstraintLayout`** to arrange the UI components and Android's **`Patterns.EMAIL_ADDRESS`** to validate the email format.
 
 ## 🛠️ Technologies Used
 
@@ -73,7 +73,7 @@ EmailValidateApp/
 
 ### 1. ConstraintLayout
 
-`ConstraintLayout` is used to arrange the email field, password field, and Login button on the screen.
+**`ConstraintLayout`** is used to arrange the email field, password field, and Login button on the screen.
 
 ```xml
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -86,7 +86,7 @@ EmailValidateApp/
 
 ### 2. EditText
 
-`EditText` accepts the email address and password entered by the user.
+**`EditText`** accepts the email address and password entered by the user.
 
 **Email input:**
 
@@ -110,11 +110,11 @@ EmailValidateApp/
     android:inputType="textPassword" />
 ```
 
-The `textEmailAddress` input type provides an email-friendly keyboard, while `textPassword` hides the password characters.
+The **`textEmailAddress`** input type provides an email-friendly keyboard, while **`textPassword`** hides the password characters.
 
 ### 3. Email Validation
 
-Android's `Patterns.EMAIL_ADDRESS` is used to check whether the entered text matches a typical email address format.
+Android's **`Patterns.EMAIL_ADDRESS`** is used to check whether the entered text matches a typical email address format.
 
 ```java
 if (Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
@@ -128,7 +128,7 @@ The Login button is enabled only when the email format is valid.
 
 ### 4. TextWatcher
 
-`TextWatcher` monitors changes in the email field and performs validation while the user types.
+**`TextWatcher`** monitors changes in the email field and performs validation while the user types.
 
 ```java
 etEmail.addTextChangedListener(new TextWatcher() {
@@ -273,14 +273,14 @@ An invalid email format keeps the Login button disabled.
 6. Enter `1234` in the password field.
 7. Click **Login**.
 8. Verify the `Login Successful` Toast message.
-9. Try incorrect credentials to verify the `Invalid Credentials` Toast message.
+9. Try incorrect credentials to verify the **`Invalid Credentials`** Toast message.
 
 ## 📚 Learning Objective
 
-The objective of this practical is to understand how to create an Android login form, validate email addresses using `Patterns.EMAIL_ADDRESS`, monitor text changes using `TextWatcher`, check credentials using conditional statements, and display Toast messages.
+The objective of this practical is to understand how to create an Android login form, validate email addresses using **`Patterns.EMAIL_ADDRESS`**, monitor text changes using **`TextWatcher`**, check credentials using conditional statements, and display Toast messages.
 
 **Note:** This application uses hardcoded demo credentials. Email format validation does not verify that an email address exists. Real applications should authenticate users securely through a backend or authentication provider.
 
 ## 👩‍💻 Author
 
-Adima Zareen
+**Adima Zareen**
