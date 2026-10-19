@@ -1,6 +1,6 @@
 # Android List Display Application
 
-A simple Android application demonstrating how to pass a number between activities using an `Intent` and display the size of a sample list.
+A simple Android application demonstrating how to pass a number between activities using an **`Intent`** and display the size of a sample list.
 
 ## 📱 Description
 
@@ -9,7 +9,7 @@ This project demonstrates how to create a two-screen Android application using J
 **Screen 1 — MainActivity**
 - Accepts a number from the user.
 - Validates the input.
-- Passes the number to the next activity using an explicit `Intent`.
+- Passes the number to the next activity using an explicit **`Intent`**.
 
 **Screen 2 — DisplayActivity**
 - Receives the number from the previous screen.
@@ -89,7 +89,7 @@ Accepts a number from the user.
 
 ### 2. Intent
 
-Passes the entered number from `MainActivity` to `DisplayActivity`.
+Passes the entered number from **`MainActivity`** to **`DisplayActivity`**.
 
 ```java
 Intent intent = new Intent(
@@ -103,7 +103,7 @@ startActivity(intent);
 
 ### 3. Receiving Data
 
-The second activity retrieves the number using `getIntExtra()`.
+The second activity retrieves the number using **`getIntExtra()`**.
 
 ```java
 int passedNumber =
@@ -114,7 +114,7 @@ tvPassed.setText("Passed number: " + passedNumber);
 
 ### 4. Creating a List
 
-A sample list is created using `Arrays.asList()`.
+A sample list is created using **`Arrays.asList()`**.
 
 ```java
 List<String> items = Arrays.asList(
@@ -128,7 +128,7 @@ List<String> items = Arrays.asList(
 
 ### 5. Counting List Items
 
-The `size()` method returns the number of elements in the list.
+The **`size()`** method returns the number of elements in the list.
 
 ```java
 int count = items.size();
@@ -174,12 +174,12 @@ If the input is empty or is outside the supported integer range, the application
 4. Click **Run**.
 5. Enter a number on the first screen.
 6. Click **Next**.
-7. Verify that the next screen displays the entered number and the list count of `5`.
+7. Verify that the next screen displays the entered number and the list count of **`5`**.
 
 ## 📚 Learning Objective
 
-The objective of this practical is to understand multiple Android activities, user input validation, explicit Intents, passing data between screens, creating a Java list, and counting list elements using `size()`.
+The objective of this practical is to understand multiple Android activities, user input validation, explicit Intents, passing data between screens, creating a Java list, and counting list elements using **`size()`**.
 
 ## 👩‍💻 Author
 
-Adima Zareen
+**Adima Zareen**
