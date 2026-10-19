@@ -11,16 +11,16 @@ The application provides:
 - A username input field
 - A password input field with hidden characters
 - A Submit button to validate login credentials
-- A Toast message displaying "Login Failed" when credentials are incorrect
+- A Toast message displaying **"Login Failed"** when credentials are incorrect
 - Navigation to the Home screen when login is successful
 - A welcome message displaying the logged-in username
 
-A `ConstraintLayout` is used as the root layout for both screens. `EditText` components collect the username and password, while a `Button` triggers validation. An explicit `Intent` passes the username from `MainActivity` to `HomeActivity`.
+A **`ConstraintLayout`** is used as the root layout for both screens. **`EditText`** components collect the username and password, while a **`Button`** triggers validation. An explicit **`Intent`** passes the username from **`MainActivity`** to **`HomeActivity`**.
 
 **Demo Credentials:**
 
-- Username: `admin`
-- Password: `1234`
+- Username: **`admin`**
+- Password: **`1234`**
 
 ## 🛠️ Technologies Used
 
@@ -74,7 +74,7 @@ LoginScreenApp/
 
 ### 1. ConstraintLayout
 
-`ConstraintLayout` is used as the main layout for the login and welcome screens.
+**`ConstraintLayout`** is used as the main layout for the login and welcome screens.
 
 ```xml
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -87,7 +87,7 @@ LoginScreenApp/
 
 ### 2. EditText
 
-`EditText` is used to accept the username and password entered by the user.
+**`EditText`** is used to accept the username and password entered by the user.
 
 Username input:
 
@@ -111,7 +111,7 @@ Password input:
     android:inputType="textPassword" />
 ```
 
-The `textPassword` input type hides the password characters while typing.
+The **`textPassword`** input type hides the password characters while typing.
 
 ### 3. Button and Click Listener
 
@@ -130,7 +130,7 @@ The click listener executes the login validation code when the user presses the 
 
 ### 4. Username and Password Validation
 
-The entered username and password are checked using an `if-else` statement.
+The entered username and password are checked using an **`if-else`** statement.
 
 ```java
 String user = etUsername.getText().toString().trim();
@@ -143,7 +143,7 @@ if (user.equals("admin") && pass.equals("1234")) {
 }
 ```
 
-The `&&` operator ensures that both the username and password must match.
+The **`&&`** operator ensures that both the username and password must match.
 
 ### 5. Toast Message
 
@@ -161,7 +161,7 @@ The message appears when the user enters incorrect credentials.
 
 ### 6. Intent
 
-An explicit `Intent` is used to navigate from `MainActivity` to `HomeActivity`.
+An explicit **`Intent`** is used to navigate from **`MainActivity`** to **`HomeActivity`**.
 
 ```java
 Intent i = new Intent(
@@ -173,11 +173,11 @@ i.putExtra("username", user);
 startActivity(i);
 ```
 
-The `putExtra()` method sends the username to the next activity.
+The **`putExtra()`** method sends the username to the next activity.
 
 ### 7. Receiving Data from Intent
 
-The Home screen receives the username using `getStringExtra()`.
+The Home screen receives the username using **`getStringExtra()`**.
 
 ```java
 String username = getIntent().getStringExtra("username");
@@ -185,7 +185,7 @@ String username = getIntent().getStringExtra("username");
 txtWelcome.setText("Welcome, " + username + "!");
 ```
 
-If the entered username is `admin`, the Home screen displays:
+If the entered username is **`admin`**, the Home screen displays:
 
 ```text
 Welcome, admin!
@@ -193,9 +193,9 @@ Welcome, admin!
 
 ### 8. AndroidManifest.xml
 
-Both activities must be declared in `AndroidManifest.xml`.
+Both activities must be declared in **`AndroidManifest.xml`**.
 
-The `MainActivity` is configured as the launcher activity, while `HomeActivity` opens after successful login.
+The **`MainActivity`** is configured as the launcher activity, while **`HomeActivity`** opens after successful login.
 
 ```xml
 <activity
@@ -264,10 +264,10 @@ The `MainActivity` is configured as the launcher activity, while `HomeActivity` 
 2. Allow Gradle to sync successfully.
 3. Start an Android emulator or connect an Android device.
 4. Click **Run** to launch the application.
-5. Enter username `admin` and password `1234`.
+5. Enter username **`admin`** and password **`1234`**.
 6. Click **Submit** to navigate to the Home screen.
-7. Verify that the welcome message displays `Welcome, admin!`.
-8. Enter incorrect credentials to verify the `Login Failed` Toast message.
+7. Verify that the welcome message displays **`Welcome, admin!`**.
+8. Enter incorrect credentials to verify the **`Login Failed`** Toast message.
 
 ## 📚 Learning Objective
 
