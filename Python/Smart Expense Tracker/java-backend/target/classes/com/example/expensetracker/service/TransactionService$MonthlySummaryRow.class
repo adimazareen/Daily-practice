@@ -1,0 +1,98 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+package com.example.expensetracker.service;
+
+import com.example.expensetracker.dto.CreateTransactionRequest;
+import com.example.expensetracker.dto.MonthlySummary;
+import com.example.expensetracker.dto.TransactionResponse;
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Locale;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Service;
+
+@Service
+public class TransactionService {
+   private final JdbcTemplate jdbc;
+   private final RowMapper<TransactionResponse> mapper = (rs, rowNum) -> new TransactionResponse(rs.getLong("id"), rs.getString("type"), rs.getBigDecimal("amount"), rs.getString("category"), rs.getString("description"), LocalDate.parse(rs.getString("transaction_date")));
+
+   public TransactionService(JdbcTemplate jdbc) {
+      this.jdbc = jdbc;
+   }
+
+   public List<TransactionResponse> findAll() {
+      return this.jdbc.query("SELECT id, type, amount, category, description, transaction_date\nFROM transactions\nORDER BY transaction_date DESC, id DESC\n", this.mapper);
+   }
+
+   public TransactionResponse create(CreateTransactionRequest request) {
+      String type = request.type().trim().toLowerCase(Locale.ROOT);
+      if (!type.equals("income") && !type.equals("expense")) {
+         throw new IllegalArgumentException("Type must be income or expense.");
+      } else if (request.amount() != null && request.amount().compareTo(BigDecimal.ZERO) > 0) {
+         String category = request.category() == null ? "" : request.category().trim();
+         if (category.isEmpty()) {
+            throw new IllegalArgumentException("Category cannot be empty.");
+         } else {
+            String description = request.description() == null ? "" : request.description().trim();
+            LocalDate transactionDate = request.transactionDate();
+            if (transactionDate == null) {
+               throw new IllegalArgumentException("Transaction date is required.");
+            } else {
+               this.jdbc.update("INSERT INTO transactions\n    (type, amount, category, description, transaction_date)\nVALUES (?, ?, ?, ?, ?)\n", new Object[]{type, request.amount(), category, description, transactionDate.toString()});
+               Long id = (Long)this.jdbc.queryForObject("SELECT MAX(id) FROM transactions", Long.class);
+               return (TransactionResponse)this.jdbc.queryForObject("SELECT id, type, amount, category, description, transaction_date\nFROM transactions WHERE id = ?\n", this.mapper, new Object[]{id});
+            }
+         }
+      } else {
+         throw new IllegalArgumentException("Amount must be greater than zero.");
+      }
+   }
+
+   public void delete(long id) {
+      int changed = this.jdbc.update("DELETE FROM transactions WHERE id = ?", new Object[]{id});
+      if (changed == 0) {
+         throw new TransactionNotFoundException(id);
+      }
+   }
+
+   public MonthlySummary summary(int year, int month) {
+      if (year >= 1 && year <= 9999 && month >= 1 && month <= 12) {
+         String prefix = String.format("%04d-%02d", year, month);
+         List<MonthlySummaryRow> rows = this.jdbc.query("SELECT type, COALESCE(SUM(amount), 0) AS total, COUNT(*) AS count\nFROM transactions\nWHERE SUBSTRING(transaction_date, 1, 7) = ?\nGROUP BY type\n", (rs, rowNum) -> new MonthlySummaryRow(rs.getString("type"), rs.getBigDecimal("total"), rs.getInt("count")), new Object[]{prefix});
+         BigDecimal income = BigDecimal.ZERO;
+         BigDecimal expenses = BigDecimal.ZERO;
+         int count = 0;
+
+         for(MonthlySummaryRow row : rows) {
+            count += row.count();
+            if ("income".equals(row.type())) {
+               income = row.total();
+            }
+
+            if ("expense".equals(row.type())) {
+               expenses = row.total();
+            }
+         }
+
+         income = income == null ? BigDecimal.ZERO : income;
+         expenses = expenses == null ? BigDecimal.ZERO : expenses;
+         return new MonthlySummary(year, month, income, expenses, income.subtract(expenses), count);
+      } else {
+         throw new IllegalArgumentException("Enter a valid year and month.");
+      }
+   }
+
+   public List<TransactionResponse> forCsv() {
+      return this.findAll();
+   }
+
+   private static record MonthlySummaryRow(String type, BigDecimal total, int count) {
+   }
+
+   public static class TransactionNotFoundException extends RuntimeException {
+      public TransactionNotFoundException(long id) {
+         super("Transaction " + id + " was not found.");
+      }
+   }
+}
