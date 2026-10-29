@@ -1,0 +1,8 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+package com.example.expensetracker.model;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
+public record Transaction(long id, String type, BigDecimal amount, String category, String description, LocalDate transactionDate) {
+}
