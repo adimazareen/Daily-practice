@@ -1,0 +1,10 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+package com.example.expensetracker.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class WebConfig {
+   public WebConfig() {
+   }
+}
