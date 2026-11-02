@@ -1,0 +1,33 @@
+package com.example.expensetracker.exception;
+
+import com.example.expensetracker.service.TransactionService.TransactionNotFoundException;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+@RestControllerAdvice
+public class ApiExceptionHandler {
+    @ExceptionHandler(TransactionNotFoundException.class)
+    public ResponseEntity<Map<String, String>> notFound(RuntimeException ex) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                .body(Map.of("error", ex.getMessage()));
+    }
+
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<Map<String, String>> badRequest(IllegalArgumentException ex) {
+        return ResponseEntity.badRequest().body(Map.of("error", ex.getMessage()));
+    }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<Map<String, String>> validation(MethodArgumentNotValidException ex) {
+        Map<String, String> body = new LinkedHashMap<>();
+        body.put("error", ex.getBindingResult().getFieldErrors().stream()
+                .findFirst().map(err -> err.getDefaultMessage()).orElse("Invalid request."));
+        return ResponseEntity.badRequest().body(body);
+    }
+}
