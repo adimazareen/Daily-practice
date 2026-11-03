@@ -18,7 +18,7 @@ A full-stack personal finance application with a web dashboard, Java Spring Boot
 - **Database:** SQLite by default; PostgreSQL via the `postgres` Spring profile
 - **Analytics:** Python 3.10+ standard library
 
-The browser calls the Java API. Java stores the data in `expenses.db` in the Java backend's working directory. The Python analytics script uses the same database path by default when run from `java-backend/`. Python analytics is an optional companion utility, not a separate web server.
+The browser calls the Java API. Java stores the data in **`expenses.db`** in the Java backend's working directory. The Python analytics script uses the same database path by default when run from **`java-backend/`**. Python analytics is an optional companion utility, not a separate web server.
 
 ## Requirements
 - Java 17 or newer
@@ -35,10 +35,10 @@ mvn spring-boot:run
 
 Then open http://localhost:8080.
 
-The SQLite database is created automatically as `java-backend/expenses.db`.
+The SQLite database is created automatically as **`java-backend/expenses.db`**.
 
 ## Run tests
-From `java-backend/`:
+From **`java-backend/`**:
 
 ```bash
 mvn test
@@ -51,7 +51,7 @@ python -m unittest discover -s python -v
 ```
 
 ## Python analytics utility
-Run from `java-backend/` so it finds the same SQLite database:
+Run from **`java-backend/`** so it finds the same SQLite database:
 
 ```bash
 python ../python/analytics.py
@@ -70,7 +70,7 @@ python ../python/analytics.py --year 2026 --month 10
 ```
 
 ## API endpoints
-Base URL: `http://localhost:8080/api`
+Base URL: **`http://localhost:8080/api`**
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -102,9 +102,9 @@ export DB_PASSWORD=your_password
 mvn spring-boot:run -Dspring-boot.run.profiles=postgres
 ```
 
-On Windows PowerShell, use `$env:DB_URL=...`, `$env:DB_USERNAME=...`, and `$env:DB_PASSWORD=...`.
+On Windows PowerShell, use **`$env:DB_URL=...`, `$env:DB_USERNAME=...`**, and **`$env:DB_PASSWORD=...`**.
 
-Never commit real passwords. The PostgreSQL profile uses `schema-postgres.sql`; the default profile uses `schema-sqlite.sql`.
+Never commit real passwords. The PostgreSQL profile uses **`schema-postgres.sql`**; the default profile uses **`schema-sqlite.sql`**.
 
 ## Project structure
 ```text
