@@ -1,3 +1,6 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
 # Example demonstrating various line styles
 y_base = np.array([1, 2, 3, 2, 1])
 
