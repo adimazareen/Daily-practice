@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 # Example of customizing plot spines
 y = [0, 1, 4, 9, 16]
 plt.plot(y)
