@@ -1,3 +1,6 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
 # Example of a histogram for a normal distribution
 np.random.seed(42)
 data = np.random.randn(1000) # Generate 1000 random numbers from a standard normal distribution
