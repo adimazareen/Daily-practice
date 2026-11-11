@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+import pandas as pd
 
 # Example of a bar plot using Pandas for controlled ordering
 # Data: Fictional monthly active users for different social media platforms
