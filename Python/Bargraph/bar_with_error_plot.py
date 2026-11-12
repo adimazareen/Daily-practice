@@ -1,3 +1,6 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
 # Example: Comparing user engagement scores before and after a website redesign
 df = pd.DataFrame({
     'Before': [6.5, 5.8],
