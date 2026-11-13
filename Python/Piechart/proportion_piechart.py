@@ -1,3 +1,6 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
 # Data: Website traffic sources for a month
 sources = ['Organic Search', 'Direct', 'Referral', 'Social Media', 'Other']
 traffic_percent = [45, 25, 15, 10, 5]
