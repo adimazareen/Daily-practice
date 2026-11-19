@@ -1,3 +1,7 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
 try:
     import mplfinance as mpf
 except ImportError:
