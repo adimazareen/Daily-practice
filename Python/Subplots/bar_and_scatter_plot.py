@@ -1,4 +1,6 @@
-# Solution
+import numpy as np
+import matplotlib.pyplot as plt
+
 np.random.seed(10) # for reproducibility
 
 # 1. Create a figure with two subplots
